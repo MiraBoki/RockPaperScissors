@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   height: 100vh;
+   background-color: #333;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.firstdiv{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+
+    transform: translateX(95%);
+    /* background-color: tomato; */
+}
+
+.topsection{
+    width: 900px;
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    border: 2px solid #f3f3f3;
+}
+
+.gameplayers{
+    width: 700px;
+    font-size: 60px;
+
+    position: relative;
+}
+.gameplayers .player{
+    position: absolute;
+    top: 0;
+    left: -80px;
+}
+.gameplayers .bot{
+    position: absolute;
+    top: 0;
+    right: -80px;
+}
+
+.result{
+    width: 100%;
+    /* background-color: skyblue; */
+    text-align: center;
+    margin: 40px 0;
+}
+.result span{
+    border: 1px solid #f4f4f4;
+    color: #222;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.secdiv{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rock, .paper, .scissors{
+    color: gold;
+    border-radius: 30px;
+    border: 10px solid #fff;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.rock:hover, .paper:hover, .scissors:hover{
+    background-color: skyblue;
+    transform: scale(1.2);
+    border-radius: 0;
+}
+
+.red{
+    color: #fff;
+    background-color: red;
+}
+
+.botchoice{
+    margin-top: 60px;
+}
+
+em{
+    font-size: 30px;
+    color: #fff;
+    background-color: #555;
+    font-style: normal;
+    text-transform: uppercase;
+
+    padding: 20px;
+}
+
+.finalresult{
+    width: 100%;
+    height: 100vh;
+    background-color: #777;
+    color: #fff;
+    font-size: 40px;
+    line-height: 100vh;
+    letter-spacing: 1px;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+}
